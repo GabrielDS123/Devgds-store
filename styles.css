@@ -329,6 +329,7 @@ header nav ul li:hover::after{
 @media (max-width: 480px) {
     header {
         padding: 16px 14px 12px;
+        width: 100%;
     }
 
     .logo {
@@ -344,7 +345,23 @@ header nav ul li:hover::after{
     }
 
     .container {
-        padding: 180px 14px 140px;
+        padding: 180px 0 140px;
+        width: 100%;
+    }
+
+    .list {
+        width: 100%;
+        min-height: 70vh;
+    }
+
+    .item {
+        width: 100%;
+        padding: 0 14px;
+    }
+
+    .product-img {
+        width: 100%;
+        max-width: 100%;
     }
 
     .product-name {
