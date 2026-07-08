@@ -327,6 +327,15 @@ header nav ul li:hover::after{
 }
 
 @media (max-width: 480px) {
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
     header {
         padding: 16px 14px 12px;
         width: 100%;
