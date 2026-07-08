@@ -331,6 +331,10 @@ header nav ul li:hover::after{
         padding: 16px 14px 12px;
     }
 
+    .logo {
+        font-size: 1.4rem;
+    }
+
     header nav ul {
         gap: 12px;
     }
