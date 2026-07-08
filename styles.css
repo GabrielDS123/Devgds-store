@@ -94,6 +94,15 @@ header nav ul li:hover::after{
     }
 }
 
+@keyframes floatImage{
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
 .list {
     width: min(90%, 1100px);
     min-height: 70vh;
@@ -108,11 +117,19 @@ header nav ul li:hover::after{
     align-items: center;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease, visibility 0.5s ease;
+    transform: translateX(40px) scale(0.97);
+    transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s ease;
+}
+.item.enter-left{
+    transform: translateX(-40px) scale(0.97);
+}
+.item.enter-right{
+    transform: translateX(40px) scale(0.97);
 }
 .item.active{
     opacity: 1;
     visibility: visible;
+    transform: translateX(0) scale(1);
 }
 .product-img{
     width: 45%;
@@ -127,6 +144,7 @@ header nav ul li:hover::after{
     max-width: 80%;
     max-height: 60%;
     filter: drop-shadow(0 0 30px rgba(0, 247, 255, 0.3));
+    animation: floatImage 3s ease-in-out infinite;
 }
 .content{
    width: 55%;

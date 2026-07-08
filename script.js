@@ -11,6 +11,8 @@ function updateSlider(index) {
     currentIndex = (index + items.length) % items.length;
 
     items.forEach((item, i) => {
+        item.classList.remove('enter-left', 'enter-right');
+        item.classList.add(i % 2 === 1 ? 'enter-left' : 'enter-right');
         item.classList.toggle('active', i === currentIndex);
     });
 
