@@ -330,10 +330,17 @@ header nav ul li:hover::after{
     header {
         padding: 16px 14px 12px;
         width: 100%;
+        justify-content: center;
     }
 
     .logo {
         font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+        display: none;
     }
 
     header nav ul {
