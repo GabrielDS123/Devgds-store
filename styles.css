@@ -13,29 +13,33 @@ body{
 }
 header{
     position: fixed;
-    width: 90vh;
+    width: 100%;
     top: 0;
-    padding:  20px 50px;
+    padding: 20px 50px;
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     z-index: 3;
 }
 .logo{
     font-family: "Orbitron", sans-serif;
-    font-size: 2rm;
-    font-weight:900;
+    font-size: 2rem;
+    font-weight: 900;
     color: #00f7ff;
-    text-shadow: 0 0 10px rgba( 0, 247, 255, 0.5 );
+    text-shadow: 0 0 10px rgba(0, 247, 255, 0.5);
+}
+header nav{
+    margin-left: auto;
 }
 header nav ul{
     display: flex;
+    align-items: center;
     gap: 48px;
 }
 header nav ul li{
     cursor: pointer;
-    position:relative;
-    padding: 5px 0px;
+    position: relative;
+    padding: 5px 0;
 }
 header nav ul li::after{
     content: '';
@@ -50,4 +54,9 @@ header nav ul li::after{
 header nav ul li:hover::after{
     width: 100%
 }
-    
+.container{
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(135deg, #0f0f1e, #1f1f3a 100%);
+    overflow:hidden;
+}
