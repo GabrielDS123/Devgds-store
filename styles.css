@@ -60,3 +60,28 @@ header nav ul li:hover::after{
     background: linear-gradient(135deg, #0f0f1e, #1f1f3a 100%);
     overflow:hidden;
 }
+.container::before{
+    content:'';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: linear-gradient(circle, rgba(0, 247, 255, 0.2) 0%, rgba(15, 15, 30, 0) 70%);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter:blur(50px);
+    z-index: 1;
+    animation: pulse 4s infinite alternate;
+}
+@keyframes pulse{
+    0%{
+        opacity: 0.5;
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
